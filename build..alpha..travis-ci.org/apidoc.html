@@ -1,0 +1,142 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >yargs-parser (v5.0.0)</a>
+</h1>
+<h4>the mighty option parser used by yargs</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.yargs-parser">module yargs-parser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yargs-parser.yargs-parser">
+            function <span class="apidocSignatureSpan"></span>yargs-parser
+            <span class="apidocSignatureSpan">(args, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.yargs-parser.detailed">
+            function <span class="apidocSignatureSpan">yargs-parser.</span>detailed
+            <span class="apidocSignatureSpan">(args, opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.yargs-parser" id="apidoc.module.yargs-parser">module yargs-parser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.yargs-parser.yargs-parser" id="apidoc.element.yargs-parser.yargs-parser">
+        function <span class="apidocSignatureSpan"></span>yargs-parser
+        <span class="apidocSignatureSpan">(args, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Parser(args, opts) {
+  var result = parse(args.slice(), opts)
+
+  return result.argv
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.yargs-parser.detailed" id="apidoc.element.yargs-parser.detailed">
+        function <span class="apidocSignatureSpan">yargs-parser.</span>detailed
+        <span class="apidocSignatureSpan">(args, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">detailed = function (args, opts) {
+  return parse(args.slice(), opts)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**returns:**
+
+* `obj`: an object representing the parsed value of `args`
+  * `key/value`: key value pairs for each argument and their aliases.
+  * `_`: an array representing the positional arguments.
+
+### require(&#x27;yargs-parser&#x27;).<span class="apidocCodeKeywordSpan">detailed</span>(args, opts={})
+
+Parses a command line string, returning detailed information required by the
+yargs engine.
+
+**expects:**
+
+* `args`: a string or array of strings representing options to parse.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
