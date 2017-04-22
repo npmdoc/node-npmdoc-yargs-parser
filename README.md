@@ -1,6 +1,6 @@
 # npmdoc-yargs-parser
 
-#### api documentation for  yargs-parser (v5.0.0)  [![npm package](https://img.shields.io/npm/v/npmdoc-yargs-parser.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-yargs-parser) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-yargs-parser.svg)](https://travis-ci.org/npmdoc/node-npmdoc-yargs-parser)
+#### api documentation for  [yargs-parser (v5.0.0)](https://github.com/yargs/yargs-parser#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-yargs-parser.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-yargs-parser) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-yargs-parser.svg)](https://travis-ci.org/npmdoc/node-npmdoc-yargs-parser)
 
 #### the mighty option parser used by yargs
 
@@ -21,19 +21,35 @@
 ```json
 
 {
-    "name": "yargs-parser",
-    "version": "5.0.0",
+    "author": {
+        "name": "Ben Coe"
+    },
+    "bugs": {
+        "url": "https://github.com/yargs/yargs-parser/issues"
+    },
+    "dependencies": {
+        "camelcase": "^3.0.0"
+    },
     "description": "the mighty option parser used by yargs",
-    "main": "index.js",
-    "scripts": {
-        "pretest": "standard",
-        "test": "nyc mocha test/*.js",
-        "coverage": "nyc report --reporter=text-lcov | coveralls",
-        "release": "standard-version"
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "coveralls": "^2.11.12",
+        "mocha": "^3.0.1",
+        "nyc": "^10.0.0",
+        "standard": "^8.0.0",
+        "standard-version": "^4.0.0"
     },
-    "repository": {
-        "url": "git@github.com:yargs/yargs-parser.git"
+    "directories": {},
+    "dist": {
+        "shasum": "275ecf0d7ffe05c77e64e7c86e4cd94bf0e1228a",
+        "tarball": "https://registry.npmjs.org/yargs-parser/-/yargs-parser-5.0.0.tgz"
     },
+    "files": [
+        "lib",
+        "index.js"
+    ],
+    "gitHead": "2c95ba9e5ad3b8bb6248bf41f013d9bd3700d56f",
+    "homepage": "https://github.com/yargs/yargs-parser#readme",
     "keywords": [
         "argument",
         "parser",
@@ -45,23 +61,29 @@
         "args",
         "argument"
     ],
-    "author": "Ben Coe <ben@npmjs.com>",
     "license": "ISC",
-    "devDependencies": {
-        "chai": "^3.5.0",
-        "coveralls": "^2.11.12",
-        "mocha": "^3.0.1",
-        "nyc": "^10.0.0",
-        "standard": "^8.0.0",
-        "standard-version": "^4.0.0"
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "bcoe"
+        },
+        {
+            "name": "nexdrew"
+        }
+    ],
+    "name": "yargs-parser",
+    "optionalDependencies": {},
+    "repository": {
+        "url": "git+ssh://git@github.com/yargs/yargs-parser.git"
     },
-    "dependencies": {
-        "camelcase": "^3.0.0"
+    "scripts": {
+        "coverage": "nyc report --reporter=text-lcov | coveralls",
+        "pretest": "standard",
+        "release": "standard-version",
+        "test": "nyc mocha test/*.js"
     },
-    "files": [
-        "lib",
-        "index.js"
-    ]
+    "version": "5.0.0",
+    "bin": {}
 }
 ```
 
